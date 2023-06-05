@@ -4,21 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mahdi's portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="nav">
-      <p class="myname"><a href="#">Mahdi Allahdadi</a></p>
+      <p class="myname"><a href="#hero">Mahdi Allahdadi</a></p>
       <p class="nav--timer">2:27 PM</p>
       <ul>
-        <li class="nav--elements"><a href="">Top Skills</a></li>
-        <li class="nav--elements"><a href="">Achievements</a></li>
-        <li class="nav--elements"><a href="">Projects</a></li>
-        <li class="nav--elements"><a href="">Message Me</a></li>
+        <li class="nav--elements"><a href="#top-skills">Top Skills</a></li>
+        <li class="nav--elements"><a href="#achievements">Achievements</a></li>
+        <li class="nav--elements"><a href="#projects">Projects</a></li>
+        <li class="nav--elements"><a href="#contacts">Message Me</a></li>
       </ul>
     </div>
-    <section class="section-hero">
+    <section id="hero" class="section-hero">
       <div class="container grid grid--2-cols height--100">
         <div class="hero-text">
           <h1 class="heading-primary">
@@ -28,14 +34,14 @@
             Hey, this is an all in one person. If you have any order, just
             message me! You will have it soon.
           </p>
-          <a href="" class="btn">Message me!</a>
+          <a href="#contacts" class="btn">Message me!</a>
         </div>
         <div class="hero--img">
           <img class="image" src="images/Hero-img.png" alt="" />
         </div>
       </div>
     </section>
-    <section class="section-top-skills">
+    <section id="top-skills" class="section-top-skills">
       <div class="container">
         <h2 class="heading-secondary">TOP SKILLS</h2>
         <div class="grid grid--4-cols grid--32-gap">
@@ -83,79 +89,92 @@
         </div>
       </div>
     </section>
-    <section class="section-achievements">
+    <section id="achievements" class="section-achievements">
       <div class="container">
         <h2 class="heading-secondary">ACHIEVEMENTS</h2>
         <div class="grid grid--32-gap grid--3-cols">
-          <article class="certificates">
-            <div class="certificates--img">
-              <img src="images/Certificate 1.png" alt="Google UX Design 1" />
-            </div>
-            <div class="certificates--body">
-              <div class="certificates__title">Google UX Design (1)</div>
-              <div class="certificates__text">Foundations of UX Design</div>
-            </div>
-          </article>
-          <article class="certificates">
-            <div class="certificates--img">
-              <img src="images/Certificate 2.png" alt="Google UX Design 2" />
-            </div>
-            <div class="certificates--body">
-              <div class="certificates__title">Google UX Design (2)</div>
-              <div class="certificates__text">
-                UX Design Process: Empathize, Define, and Ideate
+          <a href="https://coursera.org/verify/3PBVFCB6R8NQ">
+            <article class="certificates">
+              <div class="certificates--img">
+                <img src="images/Certificate 1.png" alt="Google UX Design 1" />
               </div>
-            </div>
-          </article>
-          <article class="certificates">
-            <div class="certificates--img">
-              <img src="images/Certificate 3.png" alt="Google UX Design 3" />
-            </div>
-            <div class="certificates--body">
-              <div class="certificates__title">Google UX Design (3)</div>
-              <div class="certificates__text">
-                Wireframing and Low-Fidelity Prototypes
+              <div class="certificates--body">
+                <div class="certificates__title">Google UX Design (1)</div>
+                <div class="certificates__text">Foundations of UX Design</div>
               </div>
-            </div>
-          </article>
-          <article class="certificates">
-            <div class="certificates--img">
-              <img
-                src="images/Certificate 4.png"
-                alt="Afghan-Iran ICDL certificate"
-              />
-            </div>
-            <div class="certificates--body">
-              <div class="certificates__title">Afghan - Iran ICDL</div>
-              <div class="certificates__text">Office Applications</div>
-            </div>
-          </article>
-          <article class="certificates">
-            <div class="certificates--img">
-              <img
-                src="images/certificate 5.png"
-                alt="Coursera Figma certificate"
-              />
-            </div>
-            <div class="certificates--body">
-              <div class="certificates__title">Coursera Figma</div>
-              <div class="certificates__text">
-                Low Fidelity Prototyping in Figma
+            </article>
+          </a>
+          <a href="https://coursera.org/verify/JAE8A9EZCEQK">
+            <article class="certificates">
+              <div class="certificates--img">
+                <img src="images/Certificate 2.png" alt="Google UX Design 2" />
               </div>
-            </div>
-          </article>
-          <article class="certificates">
-            <div class="certificates--img">
-              <img
-                src="images/certificate 6.png"
-                alt="Afghan-Iran Graphic certificate"
-              />
-            </div>
-            <div class="certificates--body">
-              <div class="certificates__title">Afghan - Iran Graphic</div>
-              <div class="certificates__text">Graphical Applications</div>
-            </div>
-          </article>
+              <div class="certificates--body">
+                <div class="certificates__title">Google UX Design (2)</div>
+                <div class="certificates__text">
+                  UX Design Process: Empathize, Define, and Ideate
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="https://coursera.org/verify/D8R6U9BSTQKY">
+            <article class="certificates">
+              <div class="certificates--img">
+                <img src="images/Certificate 3.png" alt="Google UX Design 3" />
+              </div>
+              <div class="certificates--body">
+                <div class="certificates__title">Google UX Design (3)</div>
+                <div class="certificates__text">
+                  Wireframing and Low-Fidelity Prototypes
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="images/Certificate of ICDL.jpg">
+            <article class="certificates">
+              <div class="certificates--img">
+                <img
+                  src="images/Certificate 4.png"
+                  alt="Afghan-Iran ICDL certificate"
+                />
+              </div>
+              <div class="certificates--body">
+                <div class="certificates__title">Afghan - Iran ICDL</div>
+                <div class="certificates__text">Office Applications</div>
+              </div>
+            </article>
+          </a>
+          <a href="https://coursera.org/verify/P82583FCC6RH">
+            <article class="certificates">
+              <div class="certificates--img">
+                <img
+                  src="images/certificate 5.png"
+                  alt="Coursera Figma certificate"
+                />
+              </div>
+              <div class="certificates--body">
+                <div class="certificates__title">Coursera Figma</div>
+                <div class="certificates__text">
+                  Low Fidelity Prototyping in Figma
+                </div>
+              </div>
+            </article>
+          </a>
+
+          <a href="images/Certificate of Graphic.jpg">
+            <article class="certificates">
+              <div class="certificates--img">
+                <img
+                  src="images/certificate 6.png"
+                  alt="Afghan-Iran Graphic certificate"
+                />
+              </div>
+              <div class="certificates--body">
+                <div class="certificates__title">Afghan - Iran Graphic</div>
+                <div class="certificates__text">Graphical Applications</div>
+              </div>
+            </article>
+          </a>
         </div>
       </div>
     </section>
@@ -179,48 +198,61 @@
         </div>
       </div>
     </section> -->
-    <section class="section--projects">
+    <section id="projects" class="section--projects">
       <h2 class="heading-secondary">Projects</h2>
       <div class="grid grid--32-gap grid--3-cols">
-        <article class="projects">
-          <div class="projects--img">
-            <img src="images/Project 1.png" alt="Omnifood project" />
-          </div>
-          <div class="projects--body">
-            <div class="projects__title">Omnifood Website</div>
-            <div class="projects__text">
-              An class assignment by Jonas Schmedtman (HTML, CSS, Javascript)
+        <a href="https://omnifood-m9heb.netlify.app">
+          <article class="projects">
+            <div class="projects--img">
+              <img src="images/Project 1.png" alt="Omnifood project" />
             </div>
-          </div>
-        </article>
-        <article class="projects">
-          <div class="projects--img">
-            <img src="images/Project 2.png" alt="Amiri's database Project" />
-          </div>
-          <div class="projects--body">
-            <div class="projects__title">Amiri Republication s DB</div>
-            <div class="projects__text">
-              Our first Database project that we are working on it. (Figma)
+            <div class="projects--body">
+              <div class="projects__title">Omnifood Website</div>
+              <div class="projects__text">
+                An class assignment by Jonas Schmedtman (HTML, CSS, Javascript)
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="projects">
-          <div class="projects--img">
-            <img src="images/Project 3.png" alt="M food delivery app project" />
-          </div>
-          <div class="projects--body">
-            <div class="projects__title">M Food Delivery app</div>
-            <div class="projects__text">
-              A prototype for a food delivery app (Figma)
+          </article>
+        </a>
+        <a
+          href="https://www.figma.com/proto/4WPzYIGMTKipWx83FDGFcC/%DA%86%D8%A7%D9%BE%D8%AE%D8%A7%D9%86%D9%87-%D8%A7%D9%85%DB%8C%D8%B1%DB%8C?page-id=0%3A1&type=design&node-id=1-2&viewport=-6732%2C537%2C1.09&scaling=min-zoom&starting-point-node-id=1%3A2"
+        >
+          <article class="projects">
+            <div class="projects--img">
+              <img src="images/Project 2.png" alt="Amiri's database Project" />
             </div>
-          </div>
-        </article>
+            <div class="projects--body">
+              <div class="projects__title">Amiri Republication s DB</div>
+              <div class="projects__text">
+                Our first Database project that we are working on it. (Figma)
+              </div>
+            </div>
+          </article>
+        </a>
+        <a
+          href="https://www.figma.com/proto/qFSqW0r6IrCNzBuSoUcvT0/M-Food-delivery-prototype?page-id=0%3A1&type=design&node-id=9-798&viewport=450%2C357%2C0.29&scaling=scale-down&starting-point-node-id=9%3A798"
+        >
+          <article class="projects">
+            <div class="projects--img">
+              <img
+                src="images/Project 3.png"
+                alt="M food delivery app project"
+              />
+            </div>
+            <div class="projects--body">
+              <div class="projects__title">M Food Delivery app</div>
+              <div class="projects__text">
+                A prototype for a food delivery app (Figma)
+              </div>
+            </div>
+          </article>
+        </a>
       </div>
     </section>
-    <section class="section--contacts">
+    <section id="contacts" class="section--contacts">
       <div class="container">
         <h2 class="heading-secondary">Contacts</h2>
-        <div class="form" action="netlify">
+        <div class="form" action="mailto:m.moheb1382@gmail.com">
           <form class="form grid grid--2-cols grid--32-gap" action="">
             <div class="form--elements">
               <label for="name">Name</label>
@@ -241,7 +273,7 @@
                 rows="10"
               ></textarea>
             </div>
-            <input class="btn" type="submit" />
+            <input class="btn" type="submit" value="Submit" />
           </form>
         </div>
         <div class="contacts--icons">
@@ -290,5 +322,6 @@
         </div>
       </div>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>

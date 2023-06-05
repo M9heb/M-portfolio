@@ -4,6 +4,7 @@
 html {
   font-family: inter;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -20,6 +21,9 @@ html {
   --color-light-primary: #ffc042;
   --color-dark-primary: #db9301;
   --color-primary: #ffab00;
+}
+a {
+  text-decoration: none;
 }
 .container {
   max-width: 120rem;
@@ -55,7 +59,11 @@ html {
   align-items: center;
   padding: 1.8rem 3.2rem;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
 }
 .nav .myname a:active,
 .nav .myname a:hover,
@@ -83,6 +91,7 @@ html {
   text-decoration: none;
   color: inherit;
   display: inline-block;
+  transition: all 0.3s;
 }
 .nav--elements a:active,
 .nav--elements a:hover {
@@ -137,6 +146,7 @@ html {
   text-decoration: none;
   color: var(--color-dark-grey);
   border-radius: 8px;
+  transition: all 0.3s;
 }
 .btn:hover,
 .btn:active {
@@ -172,6 +182,12 @@ html {
   flex-direction: column;
   gap: 1.8rem;
   color: var(--color-dark-grey);
+  transition: all 0.3s;
+}
+.skills:hover,
+.certificates:hover,
+.projects:hover {
+  transform: translateY(-10px);
 }
 .skills--body,
 .certificates--body,
@@ -244,6 +260,7 @@ textarea {
   font-size: 1.8rem;
   font-family: inter;
   color: var(--color-dark-grey);
+  transition: all 0.3s;
 }
 *:focus {
   box-shadow: 0 0 0 5px var(--color-lightest-primary);

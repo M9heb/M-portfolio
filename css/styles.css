@@ -7,6 +7,7 @@ html {
 }
 
 * {
+  outline: 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -56,8 +57,13 @@ html {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
-.nav .myname {
+.nav .myname a:active,
+.nav .myname a:hover,
+.nav .myname a:link,
+.nav .myname a:visited {
   font-weight: bold;
+  text-decoration: none;
+  color: var(--color-dark-grey);
 }
 .nav .nav--timer {
   color: var(--color-light-grey);
@@ -194,8 +200,67 @@ html {
   justify-self: center;
   text-align: center;
 }
+/* section--art-gallery */
+/* .section--art-gallery {
+  padding-top: 9.6rem;
+  padding-bottom: 9.6rem;
+  background-color: var(--color-lightest-primary-bg);
+}
+.gallery-grid{
+    gri
+} */
 /*  section--projects*/
 .section--projects {
   padding-top: 9.6rem;
   padding-bottom: 9.6rem;
+  background-color: var(--color-lightest-primary-bg);
+}
+/* section--contacts */
+.section--contacts {
+  padding-top: 9.6rem;
+  padding-bottom: 4.8rem;
+  background-color: var(--color-primary);
+}
+.form {
+  margin-bottom: 4.8rem;
+}
+.form--elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+label {
+  font-size: 1.8rem;
+  color: var(--color-dark-grey);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+input,
+textarea {
+  outline: 0;
+  border-radius: 8px;
+  border: 0;
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-family: inter;
+  color: var(--color-dark-grey);
+}
+*:focus {
+  box-shadow: 0 0 0 5px var(--color-lightest-primary);
+}
+.form--elements:last-of-type {
+  grid-column: 1 / -1;
+}
+input.btn {
+  max-width: max-content;
+  padding: 1rem 2rem;
+}
+.contacts--icons {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+}
+.icon {
+  width: 2.4rem;
+  fill: var(--color-dark-grey);
 }

@@ -1,0 +1,73 @@
+/*- Greys: #555 #333 #ddd #767676 Lightest gray allowed on white #6f6f6f The lightest grey allowed on #fdf2e9 
+
+*/
+html {
+  font-family: inter;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-dark-grey: #333;
+  --color-light-grey: #eee;
+  --color-lightest-primary: #ffe57f;
+  --color-light-primary: #ffc042;
+  --color-dark-primary: #db9301;
+  --color-primary: #ffab00;
+}
+.nav {
+  color: var(--color-dark-grey);
+  display: flex;
+  font-size: 1.8rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 3.2rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.nav .myname {
+  font-weight: bold;
+}
+.nav .nav--timer {
+  color: var(--color-light-grey);
+  font-weight: bold;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2.4rem;
+}
+.nav--elements {
+  color: var(--color-dark-grey);
+}
+.nav--elements a:link,
+.nav--elements a:visited {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+.nav--elements a:active,
+.nav--elements a:hover {
+  color: var(--color-primary);
+}
+
+.nav--elements:last-of-type {
+  background-color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav--elements:last-of-type:hover {
+  background-color: var(--color-dark-primary);
+  color: white;
+}
+.nav--elements:last-of-type:hover a {
+  color: white;
+}

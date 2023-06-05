@@ -159,7 +159,8 @@ html {
   color: var(--color-dark-grey);
 }
 .skills,
-.certificates {
+.certificates,
+.projects {
   justify-self: center;
   display: flex;
   flex-direction: column;
@@ -167,17 +168,20 @@ html {
   color: var(--color-dark-grey);
 }
 .skills--body,
-.certificates--body {
+.certificates--body,
+.projects--body {
   text-align: center;
 }
 .skills__title,
-.certificates__titile {
+.certificates__title,
+.projects__title {
   font-size: 2.4rem;
   font-weight: bold;
   margin-bottom: 1.4rem;
 }
 .skills__text,
-.certificates__text {
+.certificates__text,
+.projects__text {
   font-size: 1.4rem;
 }
 /* section-achievements */
@@ -185,7 +189,13 @@ html {
   padding-top: 9.6rem;
   padding-bottom: 9.6rem;
 }
-.certificates {
+.certificates,
+.projects {
   justify-self: center;
   text-align: center;
+}
+/*  section--projects*/
+.section--projects {
+  padding-top: 9.6rem;
+  padding-bottom: 9.6rem;
 }

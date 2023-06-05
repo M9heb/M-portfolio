@@ -9,62 +9,79 @@
   </head>
   <body>
     <div class="nav">
-      <p>Mahdi Allahdadi</p>
-      <p>2:27 PM</p>
+      <p class="myname">Mahdi Allahdadi</p>
+      <p class="nav--timer">2:27 PM</p>
       <ul>
-        <li>Top Skills</li>
-        <li>Achievements</li>
-        <li>Art Gallery</li>
-        <li>Projects</li>
-        <li>Message Me</li>
+        <li class="nav--elements"><a href="">Top Skills</a></li>
+        <li class="nav--elements"><a href="">Achievements</a></li>
+        <li class="nav--elements"><a href="">Art Gallery</a></li>
+        <li class="nav--elements"><a href="">Projects</a></li>
+        <li class="nav--elements"><a href="">Message Me</a></li>
       </ul>
     </div>
     <section class="section-hero">
-      <div class="container">
+      <div class="container grid grid--2-cols height--100">
         <div class="hero-text">
-          <h1 class="header-primary">
+          <h1 class="heading-primary">
             UI / UX Designer <br />Front-End Developer
           </h1>
-          <div class="hero--body">
+          <p class="hero--body">
             Hey, this is an all in one person. If you have any order, just
             message me! You will have it soon.
-          </div>
-          <div class="btn">Message me!</div>
+          </p>
+          <a href="" class="btn">Message me!</a>
         </div>
-        <div class="hero--img"></div>
+        <div class="hero--img">
+          <img class="image" src="images/Hero-img.png" alt="" />
+        </div>
       </div>
     </section>
     <section class="section-top-skills">
       <div class="container">
-        <h2 class="header-secondary">TOP SKILLS</h2>
-        <article class="skills">
-          <div class="skills--icon"></div>
-          <div class="skills--body">
-            <div class="skills__title">Web Developing</div>
-            <div class="skills__text">HTML, CSS, JavaScript, Sass...</div>
-          </div>
-        </article>
-        <article class="skills">
-          <div class="skills--icon"></div>
-          <div class="skills--body">
-            <div class="skills__title">UI / UX Design</div>
-            <div class="skills__text">HTML, CSS, JavaScript, Sass...</div>
-          </div>
-        </article>
-        <article class="skills">
-          <div class="skills--icon"></div>
-          <div class="skills--body">
-            <div class="skills__title">Print Design</div>
-            <div class="skills__text">Figma</div>
-          </div>
-        </article>
-        <article class="skills">
-          <div class="skills--icon"></div>
-          <div class="skills--body">
-            <div class="skills__title">Motion Design</div>
-            <div class="skills__text">Illustrator, PhotoShop, Indesign,...</div>
-          </div>
-        </article>
+        <h2 class="heading-secondary">TOP SKILLS</h2>
+        <div class="grid grid--4-cols grid--32-gap">
+          <article class="skills">
+            <div class="skills--icon">
+              <img
+                src="images/html,css,javascript.svg"
+                alt="html, css and javascript icons"
+              />
+            </div>
+            <div class="skills--body">
+              <div class="skills__title">Web Developing</div>
+              <div class="skills__text">HTML, CSS, JavaScript, Sass...</div>
+            </div>
+          </article>
+          <article class="skills">
+            <div class="skills--icon">
+              <img src="images/figma.svg" alt="Figma icon" />
+            </div>
+            <div class="skills--body">
+              <div class="skills__title">UI / UX Design</div>
+              <div class="skills__text">HTML, CSS, JavaScript, Sass...</div>
+            </div>
+          </article>
+          <article class="skills">
+            <div class="skills--icon">
+              <img src="images/printdesign.svg" alt="" />
+            </div>
+            <div class="skills--body">
+              <div class="skills__title">Print Design</div>
+              <div class="skills__text">Figma</div>
+            </div>
+          </article>
+          <article class="skills">
+            <div class="skills--icon">
+              <img src="images/motiondesign.svg" alt="" />
+            </div>
+            <div class="skills--body">
+              <div class="skills__title">Motion Design</div>
+              <div class="skills__text">
+                Illustrator, PhotoShop, Indesign,...
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
     <section class="section-achievements">

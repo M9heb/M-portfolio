@@ -15,9 +15,36 @@ html {
   --color-dark-grey: #333;
   --color-light-grey: #eee;
   --color-lightest-primary: #ffe57f;
+  --color-lightest-primary-bg: rgba(255, 229, 127, 0.2);
   --color-light-primary: #ffc042;
   --color-dark-primary: #db9301;
   --color-primary: #ffab00;
+}
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.height--100 {
+  height: 100vh;
+}
+.grid {
+  display: grid;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid--32-gap {
+  gap: 3.2rem;
 }
 .nav {
   color: var(--color-dark-grey);
@@ -70,4 +97,82 @@ html {
 }
 .nav--elements:last-of-type:hover a {
   color: white;
+}
+
+/* Section HERO */
+.section-hero {
+  height: 100vh;
+
+  align-items: center;
+  position: relative;
+}
+.hero-text {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--color-dark-grey);
+}
+.heading-primary {
+  font-size: 4.6rem;
+  margin-bottom: 1.4rem;
+}
+.hero--body {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--color-primary);
+  width: max-content;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: var(--color-dark-grey);
+  border-radius: 8px;
+}
+.btn:hover,
+.btn:active {
+  background-color: var(--color-dark-primary);
+  color: white;
+}
+.hero--img {
+}
+.hero--img .image {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+/* section-top-skills */
+.section-top-skills {
+  background-color: var(--color-lightest-primary-bg);
+  padding-top: 4.8rem;
+  padding-bottom: 9.6rem;
+}
+.heading-secondary {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 4.8rem;
+  color: var(--color-dark-grey);
+}
+.skills {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  color: var(--color-dark-grey);
+}
+.skills--body {
+  text-align: center;
+}
+.skills__title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1.4rem;
+}
+.skills__text {
+  font-size: 1.4rem;
 }
